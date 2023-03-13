@@ -13,6 +13,7 @@ import "./BasicLayout.scss";
 interface BasicLayoutProps extends PropsWithChildren {
   head: React.ReactNode;
   aside: React.ReactNode;
+  footer: React.ReactNode;
 }
 
 const initialaHeaderHeight = 60;
@@ -23,7 +24,7 @@ export default function BasicLayout(props: BasicLayoutProps) {
   const [scrollTop, changeScrollTop] = useState(
     initialaHeaderHeight - window.scrollY
   );
-  const { head, aside } = props;
+  const { head, aside, footer } = props;
   const handleResize = useCallback((offset: number) => {
     dispatch(acitons.setting.resizeAside(offset));
   }, []);
@@ -35,19 +36,17 @@ export default function BasicLayout(props: BasicLayoutProps) {
   return (
     <div className="s-blog-basic_layout">
       <div className="s-blog-basic_layout_head">{head}</div>
-      <div
-        className="s-blog-basic_layout_aside"
-        style={{ width: width, top: scrollTop }}
-      >
-        {aside}
+      <div className="s-blog-basic_layout_aside" style={{ width: width }}>
+        <div
+          className="scrollable"
+          style={{ height: `calc(100vh - ${scrollTop}px)` }}
+        >
+          {aside}
+        </div>
         <Resizer onResize={handleResize} />
       </div>
-      <div
-        className="s-blog-basic_layout_main"
-        style={{ marginLeft: `${width}px` }}
-      >
-        {props.children}
-      </div>
+      <div className="s-blog-basic_layout_main">{props.children}</div>
+      <div className="s-blog-basic_layout_footer">{footer}</div>
     </div>
   );
 }

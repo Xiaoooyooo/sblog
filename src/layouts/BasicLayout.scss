@@ -1,6 +1,6 @@
 .s-blog-basic_layout {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .s-blog-basic_layout_head {
   height: 60px;
@@ -8,9 +8,11 @@
 }
 .s-blog-basic_layout_aside {
   width: 250px;
-  position: fixed;
-  top: 60px;
-  bottom: 0;
+  position: relative;
+  .scrollable {
+    position: sticky;
+    top: 0;
+  }
 }
 .s-blog-basic_layout_aside_resizer {
   position: absolute;
@@ -24,4 +26,7 @@
   flex: 1;
   min-width: 0;
   padding: 1rem;
+}
+.s-blog-basic_layout_footer {
+  width: 100%;
 }

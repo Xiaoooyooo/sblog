@@ -1,0 +1,99 @@
+:root {
+  /* Text editor */
+  --bg-color: #ffffff;
+  --text-color: #37352f;
+  --body-text-color: #37352f;
+  --text-cursor-color: var(--text-color);
+
+  --secondary-text-color: #73726e;
+  --text-accent-color: #e9e9e7;
+  --bg-color-dark: #f7f6f3;
+
+  --text-highlight-color: #4f3b2a;
+  --text-highlight-bg: #feecc8;
+
+  --code-fence-text-color: #37352f;
+  --code-fence-bg-color: #f7f6f3;
+
+  --blockquote-bg-color: #f7f7f7;
+  --blockquote-accent-color: var(--text-color);
+  --blockquote-text-color: var(--text-color);
+
+  --light-trait-100: #38352f;
+  --light-trait-200: #37352f;
+  --light-trait-300: #37352f;
+  --light-trait-400: #37352f;
+
+  --todo-bg-color: #2eaadc;
+  --todo-tick-color: #fff;
+
+  --search-select-bg-color: #edf3ec;
+  --search-select-text-color: #448361;
+
+  --search-hit-text-color: #d44c47;
+  --search-hit-bg-color: #fdebec;
+
+  --url-text-color: black;
+  --url-underline-color: #37352f;
+
+  --footnote-text-color: #f7f6f3;
+  --footnote-bg-color: #888884;
+
+  --table-primary-color: #f7f7f7;
+  --table-secondary-color: #fdfdfd;
+
+  --select-text-bg-color: #c0e5f4;
+
+  --code-color: #9a6e3a;
+  --code-cursor-color: var(--text-color);
+
+  --kbd-text-color: #73726e;
+  --kbd-bg-color: var(--bg-color-dark);
+
+  /* Menu system */
+  --side-bar-bg-color: var(--bg-color-dark);
+  --side-bar-text-color: var(--text-color);
+  --item-hover-bg-color: #e8e7e4;
+  --window-border: 1px solid var(--bg-color);
+
+  --active-file-bg-color: #e9e7e4;
+  --active-file-border-color: var(--active-file-bg-color);
+  --active-file-text-color: var(--text-color);
+
+  --footer-bg-color: var(--side-bar-bg-color);
+
+  --control-text-color: #72706b;
+
+  /* General */
+  --font-size: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  --monospace: "SF Mono Medium", "Fira Code", "Cousine", "Consolas", monospace;
+  --heading-char-color: var(--light-trait-400);
+  --color-popover-bg-color: var(--text-color);
+  --rawblock-edit-panel-bd: var(--bg-color-dark);
+  --meta-content-color: var(--body-text-color);
+  --primary-btn-border-color: var(--body-text-color);
+  --border-radius: 4px;
+
+  /* Code variables */
+  --cm-line: #999999;
+  --cm-variable: #37352f;
+  --cm-keyword: #0277aa;
+  --cm-tag: #ff5a5a;
+  --cm-bracket: #ff5a5a;
+  --cm-error: #ff5a5a;
+  --cm-attribute: #0277aa;
+  --cm-def: #dc4a68;
+  --cm-comment: #708090;
+  --cm-string: #669900;
+  --cm-operator: #9a6e3b;
+  --cm-number: #990055;
+  --cm-meta: var(--text-color);
+  --cm-atom: #845dc4;
+  --cm-builtin: #669900;
+  --cm-property: var(--text-color);
+  --cm-variable-2: var(--text-color);
+  --cm-variable-3: #0277aa;
+  --cm-gutter: #f1f3f450;
+}

@@ -1,3 +1,19 @@
+.code-contenxt {
+  position: relative;
+  --code-copy-opacity: 0;
+  code-copy {
+    opacity: var(--code-copy-opacity);
+    transition: opacity .3s 1s ease, color .3s 1s ease;
+  }
+  &:hover {
+    --code-copy-opacity: 1;
+    code-copy {
+      transition-delay: 0s;
+    }
+  }
+}
+
+
 .code-copy {
   position: absolute;
   top: 0;
@@ -6,8 +22,10 @@
   width: 18px;
   padding: 8px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: color .3s ease;
   color: #999;
+  background-color: #ececec;
+  border-radius: var(--border-radius);
   &:hover {
     color: #000;
   }

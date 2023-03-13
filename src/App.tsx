@@ -6,6 +6,7 @@ import store from "@/store";
 import BasicLayout from "@/layouts/BasicLayout";
 import Header from "@/components/Header";
 import Aside from "@/components/Aside";
+import Footer from "./components/Footer";
 
 const Blog = lazy(
   () => import(/* webpackChunkName: "Blog" */ "@/components/Blog")
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <BrowserRouter basename="/">
-        <BasicLayout head={<Header />} aside={<Aside />}>
+        <BasicLayout head={<Header />} aside={<Aside />} footer={<Footer />}>
           <Routes>
             <Route index element={<h1>Hello</h1>} />
             <Route
