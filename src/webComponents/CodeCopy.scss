@@ -1,0 +1,18 @@
+.code-copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18px;
+  width: 18px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #999;
+  &:hover {
+    color: #000;
+  }
+  &:active {
+    transition: none;
+    color: rgb(50, 150, 0);
+  }
+}

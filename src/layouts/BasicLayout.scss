@@ -1,0 +1,27 @@
+.s-blog-basic_layout {
+  // display: flex;
+  // flex-wrap: wrap;
+}
+.s-blog-basic_layout_head {
+  height: 60px;
+  width: 100%;
+}
+.s-blog-basic_layout_aside {
+  width: 250px;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+}
+.s-blog-basic_layout_aside_resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  cursor: ew-resize;
+}
+.s-blog-basic_layout_main {
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+}

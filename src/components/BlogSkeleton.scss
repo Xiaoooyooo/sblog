@@ -1,0 +1,40 @@
+.blog-skeleton {
+  position: relative;
+  .blog-skeleton-title,
+  .blog-skeleton-line {
+    background-color: #efefef;
+    border-radius: 4px;
+  }
+  .blog-skeleton-title {
+    height: 36px;
+    width: 300px;
+    margin-bottom: 30px;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  .blog-skeleton-line {
+    margin-top: 14px;
+    height: 24px;
+  }
+  .blog-skeleton-ani {
+    width: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    animation: skeleton 2s ease infinite;
+  }
+}
+@keyframes skeleton {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
