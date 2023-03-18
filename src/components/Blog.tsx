@@ -4,6 +4,7 @@ import useNprogress from "@/hooks/useNprogress";
 import { getBlogInfo } from "@/api/blog";
 import Markdown from "./Markdown";
 import BlogSkeleton from "./BlogSkeleton";
+import "./Blog.scss";
 
 export default function Blog() {
   const [loading, changeLoading] = useState(true);
